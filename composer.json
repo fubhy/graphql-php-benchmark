@@ -1,0 +1,15 @@
+{
+    "name": "fubhy/graphql-php-benchmark",
+    "authors": [
+        {
+            "name": "Sebastian Siemssen",
+            "email": "fubhy@fubhy.com"
+        }
+    ],
+    "require": {
+        "webonyx/graphql-php": "^0.11.5",
+        "youshido/graphql": "^1.5",
+        "digiaonline/graphql": "dev-master",
+        "phpbench/phpbench": "^0.14.0"
+    }
+}
