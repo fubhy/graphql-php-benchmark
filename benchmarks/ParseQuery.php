@@ -7,6 +7,7 @@ use Youshido\GraphQL\Parser\Parser as YoushidoParser;
 /**
  * @BeforeMethods({"init"})
  * @ParamProviders({"provideQueries"})
+ * @Revs(1000)
  */
 class ParseQuery {
 
