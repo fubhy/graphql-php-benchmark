@@ -1,6 +1,6 @@
 <?php
 
-use Digia\GraphQL\GraphQL as DigiaGraphQL;
+use Digia\GraphQL\Language\Parser as DigiaParser;
 use GraphQL\Language\Parser as WebonyxParser;
 use Youshido\GraphQL\Parser\Parser as YoushidoParser;
 
@@ -39,11 +39,11 @@ class ParseQuery {
   }
 
   public function benchDigiaonline(array $params) {
-    DigiaGraphQL::parse($params['query'], []);
+    (new DigiaParser())->parse($params['query'], ['noLocation' => TRUE]);
   }
 
   public function benchWebonyx(array $params) {
-    WebonyxParser::parse($params['query'], []);
+    WebonyxParser::parse($params['query'], ['noLocation' => TRUE]);
   }
 
   public function benchYoushido(array $params) {
